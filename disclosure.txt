@@ -1,22 +1,21 @@
-On November 2018, I informed Symantec for two vulnerabilities in Symantec Manager, which could allow escalation of privilege (EoP). 
-Both vulnerabilities have been verified by Symantec and one of them has been assigned CVE-2018-18367 .
-They published the advisory for the CVE after 140 days!
+# Disclosure 
+Dear visitor,
 
-However, for the second one and after 8 months (!) of waiting, there is no advisory yet.
+**On November 2018**, I informed Symantec for **two vulnerabilities** in **Symantec EndPoint Manager (SEPM)**, which could allow **escalation of privilege (EoP)**. 
+**Both vulnerabilities have been verified by Symantec** and **one of them** has been assigned **CVE-2018-18367** (*CVE-2018-18367 PoC*: [https://www.youtube.com/watch?v=d9orQwPMwNE](https://www.youtube.com/watch?v=d9orQwPMwNE) ).
+For the CVE-2018-18367, Symantec released an **advisory after 140 days**.
 
-Initially, they asked from me to expand the 90 days disclosure and wait until June 2018. 
-They claimed that the SEPM has a dependency on a 3rd party vendor and they will wait a full patch from their vendor.
-These days (end of July) they informed me for a new delay, until mid to late August.
+However, **for the second one** and after 8 months (!) of waiting, **there is no advisory yet**. 
+Symantec asked for more time to release an advisory, because of their dependency on a component from a 3rd party vendor. Initially, they asked from me to **extend the 90 days disclosure deadline** until **June 2018** (i remind that the **initial report was on November**). oun
+These days (**end of July**) they informed me for **a new delay**, and they claimed that the 3rd party vendor, will be ready on **mid to late August**. The vendor has not been revealed to me, because of some kind of NDA, between the vendor and Symantec.
 
-I have to stress at that point, that I tested the exploitation against "Symantec EndPoint Manager 14.2.1 (14.2 RU1) build 3332 (14.2.3332.1000)", and it seems that Symantec applied a patch. 
+I have to stress at that point, that I tested the exploitation against **"Symantec EndPoint Manager 14.2.1 (14.2 RU1) build 3332 (14.2.3332.1000)"**, and **it seems that Symantec applied a patch, without waiting for the vendor's fix**. However, they want to wait until the vendor's fix, in order to release the security advisory, thus **there is no advisory yet, after 8 months.**
 
-However, there is no security advisory, because they wait the patch from the 3rd party vendor.
+Being a strong believer of responsible disclosure, and talking into consideration all the above, **I am releasing the details of the second Escalation of Privilege**, in this repository. 
 
-Being a strong believer of responsible disclosure, and talking into consideration all the above, I release the exploit.
+**As far as you have upgraded to the latest release, my guess is that you will have no problems. If you have not upgraded, then probably you are already affected by CVE-2018-18367.**
 
-As far as you have upgraded to the latest SEPM, my guess is that you will have no problems. 
+Hope that i do not cause any inconvenience to the good guys.
 
-If you have not upgraded, then probably you are already affected by CVE-2018-18367. 
-
-
-
+Cu around,
+gweeperx.
